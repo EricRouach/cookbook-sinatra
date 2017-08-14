@@ -8,5 +8,6 @@ configure :development do
 end
 
 get '/' do
-  'Hello world!'
+  @usernames = ['ssaunier', 'Papillard']
+  erb :index
 end
